@@ -12,6 +12,8 @@ Simple app built on Python Flask.
 │       └── templates
 │           ├── about.html
 │           └── index.html
+├── docker-compose
+│   └── docker-compose.yml
 ├── Dockerfile
 └── README.md
 ```
@@ -62,4 +64,18 @@ docker image push <your-image>
 Run Container
 ```bash
 docker container run -d --name sampleapp -p <hostport>:5000 <your-image>
+```
+
+## Docker-Compose
+
+Change Directory
+```
+cd docker-compose
+```
+
+* NOTE : Modify docker-compose.yml file (optional)
+
+Build Image and Run Container
+```
+docker-compose up -d --build
 ```
