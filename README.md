@@ -87,7 +87,12 @@ cd docker-compose
 
 * NOTE : Modify docker-compose.yml file (optional)
 
-Build Image and Run Container
+Run services defined on default (docker-compose.yml) file
 ```
 docker-compose up -d --build
+```
+
+Run services defined on docker-compose-dev.yml file
+```
+docker-compose -f docker-compose-dev.yml up -d --build
 ```
